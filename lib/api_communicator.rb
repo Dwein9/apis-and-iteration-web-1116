@@ -23,7 +23,7 @@ end
 
 def parse_character_movies(films_hash)
     films_hash.each.with_index(1) do |movie, index|
-      puts "#{index}. #{movie["director"]}"
+      puts "#{index}. #{movie["title"]}"
     end
   # some iteration magic and puts out the movies in a nice list
 end
