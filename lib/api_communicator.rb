@@ -24,6 +24,7 @@ end
 def parse_character_movies(films_hash)
     films_hash.each.with_index(1) do |movie, index|
       puts "#{index}. #{movie["title"]}"
+      puts "Director: #{movie["director"]}"
     end
   # some iteration magic and puts out the movies in a nice list
 end
@@ -33,7 +34,10 @@ def show_character_movies(character)
   parse_character_movies(films_hash)
 end
 
+
 ## BONUS
 
 # that `get_character_movies_from_api` method is probably pretty long. Does it do more than one job?
+
+
 # can you split it up into helper methods?
